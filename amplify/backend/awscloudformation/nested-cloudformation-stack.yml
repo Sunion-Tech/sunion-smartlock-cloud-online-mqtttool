@@ -96,7 +96,7 @@
 					"autoVerifiedAttributes": "email",
 					"mfaConfiguration": "OFF",
 					"mfaTypes": "SMS Text Message",
-					"roleName": "cognito81d9f49f_sns-role",
+					"roleName": "cognito_sns-role",
 					"roleExternalId": "cognito81d9f49f_role_external_id",
 					"policyName": "cognito81d9f49f-sns-policy",
 					"smsAuthenticationMessage": "Your authentication code is {####}",

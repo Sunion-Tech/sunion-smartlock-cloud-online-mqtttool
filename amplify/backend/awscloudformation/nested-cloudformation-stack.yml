@@ -84,7 +84,6 @@
 				"TemplateURL": "https://s3.amazonaws.com/integral-design.net/sunion/cognito81d9f49f-cloudformation-template.yml",
 				"Parameters": {
 					"identityPoolName": "cognito81d9f49f_identitypool_81d9f49f",
-					"UsernameAttributes"
 					"allowUnauthenticatedIdentities": false,
 					"thirdPartyAuth": false,
 					"lambdaLogPolicy": "cognito81d9f49f_lambda_log_policy",

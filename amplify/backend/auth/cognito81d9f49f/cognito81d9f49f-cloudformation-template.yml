@@ -171,6 +171,7 @@ Resources:
       UserPoolName: !If [ShouldNotCreateEnvResources, !Ref userPoolName, !Join ['',[!Ref userPoolName, '-', !Ref env]]]
       Schema: 
       -
+        AttributeDataType: String
         Name: encryptionkey
         Required: true
         Mutable: true

@@ -169,13 +169,7 @@ Resources:
     UpdateReplacePolicy: Retain
     Properties:
       UserPoolName: !If [ShouldNotCreateEnvResources, !Ref userPoolName, !Join ['',[!Ref userPoolName, '-', !Ref env]]]
-      Schema: 
-      # -
-      #   AttributeDataType: String
-      #   Name: encryptionkey
-      #   Required: true
-      #   Mutable: true
-        
+       
       UsernameAttributes: [email,phone_number]
       AutoVerifiedAttributes: !Ref autoVerifiedAttributes
       

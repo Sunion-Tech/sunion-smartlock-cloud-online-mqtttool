@@ -170,17 +170,21 @@ Resources:
     Properties:
       UserPoolName: !If [ShouldNotCreateEnvResources, !Ref userPoolName, !Join ['',[!Ref userPoolName, '-', !Ref env]]]
       Schema: 
-        
+
+        -
+          Name: phone_number
+          Required: false
+          Mutable: true
         -
           Name: email
-          Required: true
+          Required: false
           Mutable: true
         -
           Name: encryptionkey
           Required: true
           Mutable: true
         
-      UsernameAttributes: [email]
+      UsernameAttributes: [email,phone_number]
       AutoVerifiedAttributes: !Ref autoVerifiedAttributes
       
       
@@ -190,10 +194,10 @@ Resources:
       Policies:
         PasswordPolicy:
           MinimumLength: !Ref passwordPolicyMinLength
-          RequireLowercase: true
-          RequireNumbers: true
+          RequireLowercase: false
+          RequireNumbers: false
           RequireSymbols: false
-          RequireUppercase: true
+          RequireUppercase: false
       MfaConfiguration: !Ref mfaConfiguration
       SmsVerificationMessage: !Ref smsVerificationMessage
       SmsConfiguration: 

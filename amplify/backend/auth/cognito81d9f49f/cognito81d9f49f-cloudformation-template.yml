@@ -171,9 +171,9 @@ Resources:
       UserPoolName: !If [ShouldNotCreateEnvResources, !Ref userPoolName, !Join ['',[!Ref userPoolName, '-', !Ref env]]]
       Schema: 
       -
-          Name: encryptionkey
-          Required: true
-          Mutable: true
+        Name: encryptionkey
+        Required: true
+        Mutable: true
         
       UsernameAttributes: [email,phone_number]
       AutoVerifiedAttributes: !Ref autoVerifiedAttributes

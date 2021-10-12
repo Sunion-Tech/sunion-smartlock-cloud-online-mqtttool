@@ -12,7 +12,7 @@
         "email",
 	"phone_number"
     ],
-    "mfaConfiguration": "ON",
+    "mfaConfiguration": "OFF",
     "mfaTypes": [
         "SMS Text Message"
     ],

@@ -81,7 +81,7 @@
 		"authcognito81d9f49f": {
 			"Type": "AWS::CloudFormation::Stack",
 			"Properties": {
-				"TemplateURL": "https://s3.amazonaws.com/integral-design.net/sunion/cognito81d9f49f-cloudformation-template.yml",
+				"TemplateURL": "https://ikey-lock.s3.amazonaws.com/cognito81d9f49f-cloudformation-template.yml",
 				"Parameters": {
 					"identityPoolName": "sunion-identitypool-20211012",
 					"allowUnauthenticatedIdentities": false,

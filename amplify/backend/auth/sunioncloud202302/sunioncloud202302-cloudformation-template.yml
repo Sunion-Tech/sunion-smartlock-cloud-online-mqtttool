@@ -371,8 +371,6 @@ Outputs :
   AppClientID:
     Value: !Ref 'UserPoolClient'
     Description: The user pool app client id
-  AppClientSecret:
-    Value: !GetAtt UserPoolClientInputs.appSecret
   
    
    

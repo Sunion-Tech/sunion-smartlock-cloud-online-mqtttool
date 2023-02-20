@@ -1,6 +1,6 @@
 {
 	"auth": {
-		"sunion_cloud_202302": {
+		"sunioncloud202302": {
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation"
 		}
